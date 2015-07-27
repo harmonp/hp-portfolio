@@ -433,15 +433,61 @@ th {
   background-size: cover;
   height: 45.938rem;
   overflow: auto;
+  animation-name: fadeInPic;
+  animation-duration: 7s;
 }
-.image-section .darken h1 {
-  text-align: right;
-  margin-top: 4rem;
-  margin-right: 2.5em;
+/*Navigation Bar Design*/
+
+@keyframes fadeIn {
+  from {background-color: #3ad656; }
+  to {background-color: white;}
+}
+nav {
+margin: 0;
+padding: 1em;
+animation-name: fadeIn;
+animation-duration: 7s;
+}
+
+@keyframes fadeInName {
+  from {color: #3ad656;}
+  to {color: white;}
+}
+
+@keyframes fadeInPic {
+  from {background-color: #3ad656;}
+}
+
+.navigation .page-navigation > li {
+display: inline-block;
+color: #3ad656;
+margin-left: 8%; 
+font-size: 1.4em;
+font-family: Volkorn, serif;
+font-weight: 500;
+letter-spacing: .1em;
+-webkit-font-smoothing: antialiased;
+}
+
+
+.image-section .color-box {
+
+  height: 45.938rem;
+  width: 27rem;
+  background-color: #3ad656;
+  margin-left: 60rem;
+  margin-right: 0; 
+  display: inline-block;
+}
+.image-section .color-box h1 {
+  text-align: center;
+  margin-top: 15rem;
   font-family: Volkorn, serif;
   font-weight: 300;
   letter-spacing: .1em;
-  color: #3ad656;
+  color: white;
   font-size: 4em;
   -webkit-font-smoothing: antialiased;
+  animation-name: fadeInName;
+  animation-duration: 7s;
 }
